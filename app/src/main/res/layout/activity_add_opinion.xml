@@ -21,7 +21,7 @@
         android:layout_height="330dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:hint="Burada kendi fikrinizi belirtebilir. Eklemek istediğiniz görselleri ekleyebilirsiniz."
+        android:hint="Fikrinizi belirtebilir ve görsel ekleyebilirsiniz."
         android:inputType="text|textMultiLine" />
 
     <LinearLayout

@@ -6,7 +6,7 @@
     <string name="logoutText">Çıkış Yap</string>
     <string name="addButtonText">Fikir Paylaş</string>
     <string name="addButtonTextDesc">Yeni bir fikrin mi var? \nBizimle paylaş!</string>
-    <string name="addOpinionDesc">Fikirini planladığın adresi girebilir. Veya haritadan seçebilirsin.</string>
+    <string name="addOpinionDesc">Fikrini planladığınız adresi yazabilir veya haritadan seçebilirsiniz.</string>
     <string name="mapText">Harita</string>
     <string name="headingOpinionPage">Neredesiniz?</string>
     <string name="addFilesText">Dosya Ekle</string>

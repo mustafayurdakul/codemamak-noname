@@ -2,7 +2,7 @@
 
 17-19 MAYIS Mamak Belediyesi Hackathonunda üzerinde açlıştığımız fikrin çalışan uygulaması.
 
-## "Nasıl OLsun?"
+## "Nasıl Olsun?"
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 

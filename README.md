@@ -14,9 +14,9 @@ Hackathon boyunca üzerinde çalıştığımız uygulamanın çalışabilir bir 
 son güncelleme ile buraya ekliyoruz. Denemekten çekinmeyin!
 
 ```
-Son Güncelleme: 18 May 19.12 
+Son Güncelleme: 18 May 20.00
 ```
-[Buradan indirebilirsiniz.](https://we.tl/t-C2CSfQkHXU)
+[Buradan indirebilirsiniz.](https://we.tl/t-RqwxLKkJgI)
 
 ### Gereklilikler
 

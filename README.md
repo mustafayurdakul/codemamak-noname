@@ -25,8 +25,8 @@ Android 6.0 üzerinde herhangi bir mobil cihaz üzerinde çalıştırabilirsiniz
 
 ## Kimler Var
 * **Metin Yıldız** - [metinyildiz](https://twitter.com/einmetin)
-* **Göktürk Sığırtmaç** - [anilaydinn](https://github.com/https://github.com/anilaydinn)
-* **Anıl Aydın** - [skyturks](https://github.com/skyturks)
+* **Göktürk Sığırtmaç** - [skyturks](https://github.com/skyturks)
+* **Anıl Aydın** - [anilaydinn](https://github.com/https://github.com/anilaydinn)
 * **Mustafa Yurdakul** - [yurdakulmustafa](https://github.com/yurdaklmustafa)
 
 

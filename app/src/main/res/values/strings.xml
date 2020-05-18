@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ne Olsun? 🏙️ Noname - Codemamak</string>
+    <string name="title_activity_maps">Ne olsun?️</string>
+    <string name="userName">Mustafa Yurdakul</string>
+    <string name="address">06480 Mamak/Ankara</string>
+    <string name="logoutText">Çıkış Yap</string>
+    <string name="addButtonText">Fikir Paylaş</string>
+    <string name="addButtonTextDesc">Yeni bir fikrin mi var? \nBizimle paylaş!</string>
+    <string name="addOpinionDesc">Fikirini planladığın adresi girebilir. Veya haritadan seçebilirsin.</string>
+    <string name="mapText">Harita</string>
+    <string name="headingOpinionPage">Neredesiniz?</string>
+    <string name="addFilesText">Dosya Ekle</string>
+    <string name="next">Devam et</string>
+</resources>

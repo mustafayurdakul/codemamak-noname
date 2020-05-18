@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddLocation">
+
+    <TextView
+        android:id="@+id/userOpinion"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/headingOpinionPage"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/addOpinionDesc"
+        android:inputType="text|textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/addLocation"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/addButtonText"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gps" />
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mapText"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/nexttoOpinion"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/next" />
+    </LinearLayout>
+
+
+</LinearLayout>

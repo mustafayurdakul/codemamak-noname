@@ -1,6 +1,8 @@
 package com.example.codemamak_noname;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +47,7 @@ public class MarkerDinlenmeParki extends AppCompatActivity {
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked == true) {
+                if (isClicked) {
                     isClicked = false;
                     imageView1.setImageResource(R.drawable.park02);
                     btnOpinion.setVisibility(View.VISIBLE);
@@ -66,7 +68,7 @@ public class MarkerDinlenmeParki extends AppCompatActivity {
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked == true) {
+                if (isClicked) {
                     isClicked = false;
                     imageView2.setImageResource(R.drawable.park01);
                     btnOpinion.setVisibility(View.VISIBLE);
@@ -87,14 +89,14 @@ public class MarkerDinlenmeParki extends AppCompatActivity {
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked == true) {
+                if (isClicked) {
                     isClicked = false;
                     imageView3.setImageResource(R.drawable.parkrandom);
                     btnOpinion.setVisibility(View.VISIBLE);
                 } else {
                     isClicked = true;
-                    imageView1.setImageResource(R.drawable.park01);
-                    imageView2.setImageResource(R.drawable.park02);
+                    imageView1.setImageResource(R.drawable.park02);
+                    imageView2.setImageResource(R.drawable.park01);
                     imageView3.setImageResource(R.drawable.tick);
                     imageView4.setImageResource(R.drawable.parksari);
                     btnOpinion.setVisibility(View.GONE);
@@ -108,14 +110,14 @@ public class MarkerDinlenmeParki extends AppCompatActivity {
         imageView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked == true) {
+                if (isClicked) {
                     isClicked = false;
                     imageView4.setImageResource(R.drawable.parksari);
                     btnOpinion.setVisibility(View.VISIBLE);
                 } else {
                     isClicked = true;
-                    imageView1.setImageResource(R.drawable.park01);
-                    imageView2.setImageResource(R.drawable.park02);
+                    imageView1.setImageResource(R.drawable.park02);
+                    imageView2.setImageResource(R.drawable.park01);
                     imageView3.setImageResource(R.drawable.parkrandom);
                     imageView4.setImageResource(R.drawable.tick);
                     btnOpinion.setVisibility(View.GONE);
@@ -140,7 +142,13 @@ public class MarkerDinlenmeParki extends AppCompatActivity {
                 AlertDialog alert = new AlertDialog.Builder(MarkerDinlenmeParki.this).create();
                 alert.setTitle("Başarılı!");
                 alert.setMessage("Seçiminiz başarılı şekilde iletilmiştir.");
-                alert.setCancelMessage(null);
+                alert.setButton(Dialog.BUTTON_POSITIVE, "Tamam", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent mapActivity = new Intent(getApplicationContext(), MapsActivity.class);
+                        startActivity(mapActivity);
+                    }
+                });
                 alert.show();
             }
         });

@@ -1,6 +1,8 @@
 package com.example.codemamak_noname;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -140,7 +142,13 @@ public class MarkerKutuphane extends AppCompatActivity {
                 AlertDialog alert = new AlertDialog.Builder(MarkerKutuphane.this).create();
                 alert.setTitle("Başarılı!");
                 alert.setMessage("Seçiminiz başarılı şekilde iletilmiştir.");
-                alert.setCancelMessage(null);
+                alert.setButton(Dialog.BUTTON_POSITIVE, "Tamam", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent mapActivity = new Intent(getApplicationContext(), MapsActivity.class);
+                        startActivity(mapActivity);
+                    }
+                });
                 alert.show();
             }
         });

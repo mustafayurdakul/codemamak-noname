@@ -4,13 +4,56 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Katıldıklarım"
+            android:scaleType="fitCenter"
+            android:src="@drawable/meincluded" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="Katıldıklarım"
+            android:textSize="14sp" />
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Tamamlananlar"
+            android:scaleType="fitCenter"
+            android:src="@drawable/finished" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="Tamamlananlar"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/userName"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="8dp"
         android:text="@string/userName"
         android:textSize="24sp" />
 

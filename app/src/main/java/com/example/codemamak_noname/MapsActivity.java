@@ -18,17 +18,16 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
-        ImageButton addButton = (ImageButton) findViewById(R.id.addLocation);
+        ImageButton addButton = findViewById(R.id.addLocation);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
+        assert mapFragment != null;
         mapFragment.getMapAsync(this);
 
         addButton.setOnClickListener(new View.OnClickListener() {
@@ -43,20 +42,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
         LatLng mamak = new LatLng(39.9048002, 32.9195131);
 
         LatLng markerDemokPark = new LatLng(39.9031252, 32.9350306);
         LatLng markerKutuphane = new LatLng(39.900369, 32.915591);
         LatLng markerDinlenPark = new LatLng(39.908608, 32.923790);
 
-        mMap.addMarker(new MarkerOptions().position(markerDemokPark).title("Demokrasi Parkı").snippet("Demokrasi parkındaki bankları seç!").icon(BitmapDescriptorFactory.defaultMarker(45)));
-        mMap.addMarker(new MarkerOptions().position(markerKutuphane).title("Ege Mahallesi Halk Kütüphanesi").snippet("Kütüphanenin tabelası değişecek. Nasıl olsun?").icon(BitmapDescriptorFactory.defaultMarker(210)));
-        mMap.addMarker(new MarkerOptions().position(markerDinlenPark).title("Dinlenme Parkı").snippet("En güzel çocuk parkını seçmemiz için bize yardım et!").icon(BitmapDescriptorFactory.defaultMarker(10)));
+        googleMap.addMarker(new MarkerOptions().position(markerDemokPark).title("Demokrasi Parkı").snippet("Demokrasi parkındaki bankları seç!").icon(BitmapDescriptorFactory.defaultMarker(45)));
+        googleMap.addMarker(new MarkerOptions().position(markerKutuphane).title("Ege Mahallesi Halk Kütüphanesi").snippet("Kütüphanenin tabelası değişecek. Nasıl olsun?").icon(BitmapDescriptorFactory.defaultMarker(210)));
+        googleMap.addMarker(new MarkerOptions().position(markerDinlenPark).title("Dinlenme Parkı").snippet("En güzel çocuk parkını seçmemiz için bize yardım et!").icon(BitmapDescriptorFactory.defaultMarker(10)));
 
-        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+        googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
                 if (marker.getTitle().equals("Demokrasi Parkı")) {
@@ -73,6 +70,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
 
         float zoomLevel = 15.0f; //This goes up to 21
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mamak, zoomLevel));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mamak, zoomLevel));
     }
 }

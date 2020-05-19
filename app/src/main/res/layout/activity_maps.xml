@@ -68,4 +68,5 @@
             android:text="@string/addButtonTextDesc"
             android:textSize="14sp" />
     </LinearLayout>
+
 </LinearLayout>
